@@ -1,0 +1,47 @@
+// =============================================================================
+// Global settings
+// =============================================================================
+
+// Fonts
+// =============================================================================
+
+$font-family-default-sans-serif: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-default-serif: 'Georgia', 'Times New Roman', Times, serif;
+
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$line-height-headline: 1.2;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Spacing
+// =============================================================================
+// Default spacing by designers is multiples of 8.
+
+$base-spacing-unit: 1.5rem; // 24px
+$spacing: $base-spacing-unit;
+
+$spacing-xxxs: 0.25rem; // 4px
+$spacing-xxs: 0.5rem; // 8px
+$spacing-xs: 0.75rem; // 12px
+$spacing-s: 1rem; // 16px
+
+$spacing-l: 2rem; // 32px
+$spacing-xl: 2.5rem; // 40px
+$spacing-xxl: 3rem; // 48px
+$spacing-xxxl: 4rem; // 64px
+
+// Animations/Transitions
+// =============================================================================
+
+$base-transition: all 0.1s ease-in;
+
+$ease-primary: cubic-bezier(0.51, 0.11, 0.59, 0.92);
+$ease-out-primary: cubic-bezier(0.2, 0.42, 0.59, 0.92);
+$ease-in-primary: cubic-bezier(0.55, 0.12, 1, 1);
+
+$ease: cubic-bezier(0.43, 0.11, 0.41, 1);
+$easing-circ: cubic-bezier(0.075, 0.82, 0.165, 0);

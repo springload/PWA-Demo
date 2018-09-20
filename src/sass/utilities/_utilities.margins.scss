@@ -1,0 +1,23 @@
+// =============================================================================
+// Margins
+// =============================================================================
+
+// CSS Margins collapse into each other, so only set margins along one axis
+// direction (e.g. right and bottom, or left and top , but not left and right
+// and top and bottom). We use right and bottom.
+
+.u-mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.u-mb {
+    margin-bottom: $spacing !important;
+}
+
+.u-mb-xl {
+    margin-bottom: $spacing-xl !important;
+}
+
+.u-mb-xs {
+    margin-bottom: $spacing-xs !important;
+}

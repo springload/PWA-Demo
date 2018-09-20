@@ -1,0 +1,22 @@
+// =============================================================================
+// Icons with text
+// =============================================================================
+
+.icon-text > svg {
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+    margin-top: -0.125em;
+    margin-right: 0.25em;
+
+    &:last-child {
+        margin-right: 0;
+        margin-left: 0.25em;
+    }
+}
+
+.icon-text--small > svg {
+    width: 1em;
+    height: 1em;
+    margin-top: -0.125em;
+}

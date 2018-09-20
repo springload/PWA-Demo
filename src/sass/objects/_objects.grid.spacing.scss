@@ -1,0 +1,19 @@
+// =============================================================================
+// Grid spacing
+// =============================================================================
+
+.grid--row-spacing {
+    margin-bottom: -$base-spacing-unit;
+
+    > * {
+        margin-bottom: $base-spacing-unit;
+    }
+}
+
+.grid--col-spacing {
+    margin-left: -$base-spacing-unit;
+
+    > * {
+        padding-left: $base-spacing-unit;
+    }
+}

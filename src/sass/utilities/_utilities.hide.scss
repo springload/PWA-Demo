@@ -1,0 +1,34 @@
+// =============================================================================
+// Hide
+// =============================================================================
+
+.u-hide {
+    display: none;
+}
+
+.u-hide\@small {
+    @include small {
+        display: none;
+    }
+}
+
+.u-hide\@medium {
+    @include medium {
+        display: none;
+    }
+}
+
+// Takes up no visual space and hide only visually, still available for screen readers
+.u-hide-visually,
+.u-accessible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0); // Deprecated but still needed to support Firefox & IE
+    border: 0;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
