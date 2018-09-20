@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/functions
+/.firebase
+.firebaserc
 
 # testing
 /coverage
