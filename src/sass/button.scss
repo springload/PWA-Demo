@@ -1,0 +1,31 @@
+// $color-btn: $color-page-text;
+// $color-btn-border: $color-page-text;
+$color-btn-background: #fff;
+$color-btn-hover: #fff;
+// $color-btn-background-hover: $color-page-text;
+// $padding-btn: $base-spacing-unit;
+
+.button {
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  // background-color: $color-btn-background;
+  // color: $color-btn;
+  // transition: $base-transition;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 0;
+  // padding-right: $padding-btn;
+  padding-bottom: 0;
+  // padding-left: $padding-btn;
+  line-height: 2.5;
+  // border-color: $color-btn-border;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0;
+  font-size: inherit;
+  // font-weight: $font-weight-bold;
+}
