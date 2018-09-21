@@ -33,9 +33,6 @@ class Form extends Component {
     } else {
       console.log('Geo Location not supported by browser');
     }
-
-    // console.log("click");
-    // navigator.geolocation.getCurrentPosition(() => {console.log("success")}, () => {console.log("fail")})
   }
 
   render() {
