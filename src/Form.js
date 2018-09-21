@@ -70,15 +70,49 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
-        <p>this is a form</p>
-        <button onClick={this.getLocation}>Get location</button>
-        <p>
-          Location: {this.state.longitude} {this.state.latitude}
-        </p>
-        <input type="file" accept="image/*" onChange={this.getImage} />
-        <br />
-        <img id="imageUpload" className="form-image" src={this.state.imageUpload} />
+      <div className="form">
+        <form>
+          <div className="form-field">
+            <label className="form-label">Location </label>
+            <button
+              className="button form-button"
+              type="button"
+              onClick={this.getLocation}
+            >
+              Get location
+            </button>
+            <input
+              className="form-input"
+              type="text"
+              readOnly
+              value={`${this.state.longitude} ${this.state.latitude}`}
+            />
+          </div>
+          <div className="form-field">
+            <label className="form-label">Image</label>
+            <input
+              className="form-input--file"
+              id="imageUpload"
+              type="file"
+              accept="image/*"
+              onChange={this.getImage}
+            />
+          <label for="imageUpload" className="button form-button">Choose file</label>
+            <img
+              id="imageUpload"
+              className="form-image"
+              src={this.state.imageUpload}
+            />
+          </div>
+          <div className="form-field">
+            <label className="form-label">Description</label>
+            <textarea
+              className="form-input form-input--textarea"
+              rows="5"
+              maxLength="5000"
+            />
+          </div>
+        </form>
       </div>
     );
   }
