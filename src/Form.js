@@ -55,6 +55,9 @@ class Form extends Component {
       <div>
         <p>this is a form</p>
         <button onClick={this.getLocation}>Get location</button>
+        <p>
+          Location: {this.state.longitude} {this.state.latitude}
+        </p>
       </div>
     );
   }
