@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
-import './App.css';
 import './sass/styles.css';
+import './starter-sass/styles.css';
 
 import Form from './Form'
 
