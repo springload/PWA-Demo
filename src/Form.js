@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 class Form extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      longitude: '',
+      latitude: ''
+    };
+    this.getLocation = this.getLocation.bind(this);
   }
 
   getLocation() {
