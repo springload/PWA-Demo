@@ -1,10 +1,6 @@
 
-body {
-  text-align: center;
-}
-
 .app {
-  text-align: center;
+  // text-align: center;
 }
 
 .app-logo {
@@ -13,6 +9,7 @@ body {
 }
 
 .app-header {
+  text-align: center;
   height: 60px;
   padding: 20px;
 }
@@ -37,8 +34,4 @@ body {
 .app-info {
   text-align: center;
   font-weight: bold;
-}
-
-.form-image {
-  height: 200px;
 }
