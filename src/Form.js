@@ -56,7 +56,7 @@ class Form extends Component {
     const selectedFile = event.target.files[0];
     const reader = new FileReader();
 
-    const imgtag = document.getElementById('imageUpload');
+    const imgtag = document.getElementById('imagePreview');
     imgtag.title = selectedFile.name;
 
     reader.onload = function(event) {
@@ -97,9 +97,9 @@ class Form extends Component {
               accept="image/*"
               onChange={this.getImage}
             />
-          <label for="imageUpload" className="button form-button">Choose file</label>
+          <label htmlFor="imageUpload" className="button form-button">Choose file</label>
             <img
-              id="imageUpload"
+              id="imagePreview"
               className="form-image"
               src={this.state.imageUpload}
             />
