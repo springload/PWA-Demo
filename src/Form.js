@@ -54,6 +54,17 @@ class Form extends Component {
 
   getImage(event) {
     const selectedFile = event.target.files[0];
+    const reader = new FileReader();
+
+    const imgtag = document.getElementById('imageUpload');
+    imgtag.title = selectedFile.name;
+
+    reader.onload = function(event) {
+      imgtag.src = event.target.result;
+    };
+
+    reader.readAsDataURL(selectedFile);
+
     this.setState({ imageUpload: selectedFile });
   }
 
@@ -66,6 +77,8 @@ class Form extends Component {
           Location: {this.state.longitude} {this.state.latitude}
         </p>
         <input type="file" accept="image/*" onChange={this.getImage} />
+        <br />
+        <img id="imageUpload" className="form-image" src={this.state.imageUpload} />
       </div>
     );
   }
