@@ -8,13 +8,24 @@ class Form extends Component {
 
   getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        var location = {
-          longitude: position.coords.longitude,
-          latitude: position.coords.latitude
-        };
-        console.log(location);
-      });
+      navigator.geolocation.getCurrentPosition(
+        position => {
+          var location = {
+            longitude: position.coords.longitude,
+            latitude: position.coords.latitude
+          };
+
+          const longitude2 = position.coords.longitude;
+          const latitude2 = position.coords.latitude;
+
+          this.setState({
+            longitude: longitude2,
+            latitude: latitude2
+          });
+          console.log(this.state);
+        },
+        }
+      );
     } else {
       console.log('Geo Location not supported by browser');
     }
