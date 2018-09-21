@@ -5,9 +5,11 @@ class Form extends Component {
     super(props);
     this.state = {
       longitude: '',
-      latitude: ''
+      latitude: '',
+      imageUpload: ''
     };
     this.getLocation = this.getLocation.bind(this);
+    this.getImage = this.getImage.bind(this);
   }
 
   getLocation() {
@@ -50,6 +52,11 @@ class Form extends Component {
     }
   }
 
+  getImage(event) {
+    const selectedFile = event.target.files[0];
+    this.setState({ imageUpload: selectedFile });
+  }
+
   render() {
     return (
       <div>
@@ -58,6 +65,7 @@ class Form extends Component {
         <p>
           Location: {this.state.longitude} {this.state.latitude}
         </p>
+        <input type="file" accept="image/*" onChange={this.getImage} />
       </div>
     );
   }
