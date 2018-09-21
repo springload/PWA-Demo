@@ -1,3 +1,4 @@
+
 .form {
   width: 80%;
   margin-left: auto;
@@ -10,28 +11,57 @@
 
 $form-field-height: 2.5rem;
 
-.form__field {
+.form-field {
   margin-bottom: 1.5rem;
 }
 
-.form__label {
+.form-label {
   display: inline-block;
   margin-bottom: 0.5rem;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 @mixin base-input-styles {
   display: block;
   width: 100%;
   line-height: $form-field-height;
-  height: $form-field-height;
   appearance: none;
-  border: 1px solid $color-grey-light;
-  background-color: $color-white;
+  border: 1px solid grey;
+  background-color: white;
   font-size: inherit;
 }
 
-.form__input {
+.form-input {
   @include base-input-styles;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.form-button {
+  display: block;
+  margin-bottom: 10px;
+  background-color: #8e8e8e;
+  width: 100%;
+  border-color: transparent;
+  color: white;
+}
+
+.form-input--file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.form-input--file + label {
+  display: block;
+  cursor: pointer;
+}
+
+.form-input--textarea {
+  width: 100%;
+  display: block;
 }
