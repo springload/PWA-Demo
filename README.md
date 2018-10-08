@@ -45,6 +45,17 @@ firebase deploy
 You should be able to view on https://pwa-demo-fbc8a.firebaseapp.com/
 It normally takes a minute or two to update.
 
+## Libraries
+
+Most how-tos just use vanilla browser API, but there is a tool from Google to generate service worker code with desired caching parameters: 
+* [Workbox](https://developers.google.com/web/tools/workbox/)
+Next.js and Gatsby do not have PWA support out of the box as of now, but both have official plugins that are based on Workbox. **This looks to be the current best practice**.
+
+Polymer PWA starter kit uses smaller helpers:
+* [Polymer PWA-helpers](https://github.com/Polymer/pwa-helpers)
+
+There are other libraries and helper kits, like [UpUp](https://github.com/TalAter/UpUp) or Google's [sw-toolbox](https://github.com/GoogleChromeLabs/sw-toolbox) and [sw-precache](https://github.com/GoogleChromeLabs/sw-precache), but they are either abandoned altogether, or the devs moved on to Workbox. 
+
 ## Useful Links
 
 https://developers.google.com/web/fundamentals/primers/service-workers/
@@ -58,5 +69,3 @@ https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/c
 https://medium.com/dev-channel/offline-storage-for-progressive-web-apps-70d52695513c
 https://medium.com/@onejohi/introducing-geolocation-in-your-pwas-65713faba51a
 https://codelabs.developers.google.com/codelabs/workbox-indexeddb/index.html?index=..%2F..%2Findex#0
-
-
