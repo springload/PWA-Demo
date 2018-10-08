@@ -47,9 +47,8 @@ It normally takes a minute or two to update.
 
 ## Libraries
 
-Most how-tos just use vanilla browser API, but there is a tool from Google to generate service worker code with desired caching parameters: 
+Most how-tos just use vanilla browser API, but there is a tool from Google to generate service worker code with desired caching parameters. Next.js and Gatsby do not have PWA support out of the box as of now, but both have official plugins that are based on Workbox. **This looks to be the current best practice**:
 * [Workbox](https://developers.google.com/web/tools/workbox/)
-Next.js and Gatsby do not have PWA support out of the box as of now, but both have official plugins that are based on Workbox. **This looks to be the current best practice**.
 
 Polymer PWA starter kit uses smaller helpers:
 * [Polymer PWA-helpers](https://github.com/Polymer/pwa-helpers)
